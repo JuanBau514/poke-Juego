@@ -1,0 +1,117 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  display: flex;
+  position: relative;
+  top: 25%;
+  left: 120%;
+  padding: 1.5rem;
+  color: #888;
+}
+
+.reglas {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: 1em;
+}
+
+.reglas h2 {
+  display: flex;
+  position: relative;
+  bottom: 5rem;
+  right: 2rem;
+}
+
+.reglas p {
+  display: flex;
+  position: relative;
+  right: 35%;
+  text-align: left;
+  color: #eeebeb;
+  margin: 0;
+  padding-left: 50px;
+}
+
+
+/* Estilos para portátiles y tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .read-the-docs {
+    position: static;
+    text-align: center;
+  }
+
+  .reglas {
+    position: static;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    left: 0;
+  }
+
+  .reglas h2 {
+    font-size: 1.2em;
+  }
+
+  .reglas p {
+    font-size: 0.9em;
+    padding-left: 40px;
+  }
+    
+}
+
+/* Estilos para dispositivos móviles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .read-the-docs {
+    position: static;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .reglas {
+    position: static;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 0.2rem;
+  }
+
+  .reglas h2 {
+    font-size: 1em;
+    margin-left: 0.2rem;
+    white-space: nowrap;
+  }
+}
